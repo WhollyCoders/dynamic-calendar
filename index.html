@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Calendar</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="calendar-head">
+                <div id="month"></div>
+                <div id="year"></div>
+            </div>
+            <div class="calendar-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>sun</th>
+                            <th>mon</th>
+                            <th>tue</th>
+                            <th>wed</th>
+                            <th>thu</th>
+                            <th>fri</th>
+                            <th>sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-weeks">
+                        <script>
+                            getCalendarWeeks();
+                            setLabel();
+                            getFirstWeek();
+                        </script>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
